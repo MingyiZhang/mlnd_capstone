@@ -24,3 +24,8 @@ floyd run --data mingyi/datasets/drivers_original/2:dataset_dir --mode jupyter -
 ## 运行时间
 训练每一个fold大约两个半小时。总共10-fold， 25小时。
 KNN计算大约8小时。
+
+## 文件目录
+Keras: 主项目文件夹</br>
+baseline：基准模型</br>
+submissions：所有上传预测</br>
