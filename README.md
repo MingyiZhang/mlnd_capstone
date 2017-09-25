@@ -26,6 +26,30 @@ floyd run --data mingyi/datasets/drivers_original/2:dataset_dir --mode jupyter -
 KNN计算大约8小时。
 
 ## 文件目录
-Keras: 主项目文件夹</br>
-baseline：基准模型</br>
-submissions：所有上传预测</br>
+#### Keras: 主项目文件夹
+5-fold cross-validation
+| 基础模型 | 运行文件                                     | 输出文件                          | LB-Private | LB-Public |
+|----------|----------------------------------------------|-----------------------------------|------------|-----------|
+| VGG16    | `Keras_fine_tuning_aug_fold0.ipynb`          | `submission_vgg16_ft0_aug.csv`    | 0.46152    | 0.54683   |
+| VGG16    | `Keras_fine_tuning_aug_fold1.ipynb`          | `submission_vgg16_ft1_aug.csv`    | 0.34059    | 0.34422   |
+| VGG16    | `Keras_fine_tuning_aug_fold2.ipynb`          | `submission_vgg16_ft2_aug.csv`    | 0.44347    | 0.63316   |
+| VGG16    | `Keras_fine_tuning_aug_fold3.ipynb`          | `submission_vgg16_ft3_aug.csv`    | 0.44602    | 0.36146   |
+| VGG16    | `Keras_fine_tuning_aug_fold4.ipynb`          | `submission_vgg16_ft4_aug.csv`    | 0.55130    | 0.52167   |
+| ResNet50 | `Keras_fine_tuning_ResNet50_aug_fold0.ipynb` | `submission_resnet50_ft0_aug.csv` | 0.35491    | 0.48216   |
+| ResNet50 | `Keras_fine_tuning_ResNet50_aug_fold1.ipynb` | `submission_resnet50_ft1_aug.csv` | 0.45376    | 0.42659   |
+| ResNet50 | `Keras_fine_tuning_ResNet50_aug_fold2.ipynb` | `submission_resnet50_ft2_aug.csv` | 0.26854    | 0.26618   |
+| ResNet50 | `Keras_fine_tuning_ResNet50_aug_fold3.ipynb` | `submission_resnet50_ft3_aug.csv` | 0.41992    | 0.49777   |
+| ResNet50 | `Keras_fine_tuning_ResNet50_aug_fold4.ipynb` | `submission_resnet50_ft4_aug.csv` | 0.37796    | 0.36269   |
+
+集成学习</br>
+`Keras_5fold.ipynb`
+
+KNN</br>
+`KNN.ipynb`
+
+
+#### baseline：基准模型
+`Resnet50_baseline_train_validation.ipynb`</br>
+`Resnet50_baseline_test.ipynb`
+
+#### submissions：主要上传预测</br>
